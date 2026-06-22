@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanyVPN - Admin</title>
+    <style>
+        body { 
+            background-color: #0f172a; 
+            color: white; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            text-align: center; 
+        }
+        .card { 
+            background-color: #1e293b; 
+            padding: 40px 30px; 
+            border-radius: 20px; 
+            width: 90%; 
+            max-width: 350px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8); 
+        }
+        h1 { font-size: 26px; margin-bottom: 15px; color: #f8fafc; }
+        p { color: #94a3b8; font-size: 15px; margin-bottom: 30px; line-height: 1.6; }
+        .btn { 
+            display: block; 
+            background-color: #3b82f6; 
+            color: white; 
+            text-decoration: none; 
+            padding: 16px; 
+            border-radius: 12px; 
+            font-weight: bold; 
+            font-size: 17px; 
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #2563eb; }
+        .badge { 
+            background-color: #ef4444; 
+            color: white; 
+            padding: 5px 12px; 
+            border-radius: 8px; 
+            font-size: 13px; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-bottom: 15px; 
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ВИЗУАЛЬНАЯ ЧАСТЬ (То, что видит человек) -->
+    <div class="card">
+        <div class="badge">ADMIN ACCESS</div>
+        <h1>DanyVPN</h1>
+        <p>Admin версия VPN-клиента DanyVPN, создано специально владельцем.</p>
+        
+        <!-- Кнопка автоматического добавления подписки -->
+        <!-- ЗАМЕНИ 'https://ТВОЙ_САЙТ.com' НА РЕАЛЬНУЮ ССЫЛКУ ЭТОЙ СТРАНИЦЫ -->
+        <a href="v2ray://install-sub?url=https://ТВОЙ_САЙТ.com&name=DanyVPN" class="btn">Активировать доступ</a>
+    </div>
+
+    <!-- ТЕХНИЧЕСКАЯ ЧАСТЬ (То, что вытягивает приложение) -->
+    <!-- Этот блок скрыт от пользователя (display: none), но VPN-клиент его прочитает -->
+    <div style="display: none;">
+vless://00000000-0000-0000-0000-000000000000@127.0.0.1:1230?encryption=none&security=none#ℹ️ Admin версия VPN-клиента DanyVPN
+vless://00000000-0000-0000-0000-000000000000@127.0.0.1:1231?encryption=none&security=none#ℹ️ Создано специально владельцем
+vless://00000000-0000-0000-0000-000000000000@127.0.0.1:1234?encryption=none&security=none#🇩🇪 ADMIN | Germany (Plus)
+vless://00000000-0000-0000-0000-000000000000@127.0.0.1:1235?encryption=none&security=none#🇺🇸 ADMIN | USA (Plus)
+vless://00000000-0000-0000-0000-000000000000@127.0.0.1:1236?encryption=none&security=none#🇳🇱 ADMIN | Netherlands (Plus)
+    </div>
+
+</body>
+</html>
+
